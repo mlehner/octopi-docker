@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:jessie
 
-RUN apt-get update && apt-get install -y python-pip python-dev python-setuptools virtualenv git libyaml-dev build-essential --no-install-recommends
+RUN apt-get update && apt-get install -y python-pip python-dev python-setuptools virtualenv git libyaml-dev build-essential libav-tools --no-install-recommends
 
 RUN rm -rf /var/lib/apt/lists/* && rm -rf /tmp/* && rm -rf /var/tmp/*
 
