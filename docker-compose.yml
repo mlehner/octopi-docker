@@ -1,0 +1,11 @@
+version: '3'
+services:
+  octoprint:
+    build: octopi/
+    user: octopi
+    ports:
+      - '5000:5000'
+    devices:
+      - "/dev/ttyACM0:/dev/ttyACM0"
+    volumes:
+      - ~/.octoprint:/home/octopi/.octoprint
