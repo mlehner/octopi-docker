@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:jessie
 
-RUN apt-get update && apt-get install -y cmake libjpeg8-dev git build-essential --no-install-recommends
+RUN apt-get update && apt-get install -y cmake libjpeg8-dev git build-essential libraspberrypi0 libraspberrypi-dev --no-install-recommends
 
 RUN rm -rf /var/lib/apt/lists/* && rm -rf /tmp/* && rm -rf /var/tmp/*
 
